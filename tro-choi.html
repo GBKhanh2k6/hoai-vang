@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trò chơi trong Hoài Vãng</title>
+  <meta name="description" content="Khoảnh khắc tranh tài Vua Tiếng Việt trong chương trình Hoài Vãng và bản chơi thử giải từ.">
+  <meta name="theme-color" content="#fee4b0">
+  <meta property="og:title" content="Trò chơi trong Hoài Vãng">
+  <meta property="og:description" content="Khoảnh khắc tranh tài Vua Tiếng Việt trong chương trình Hoài Vãng và bản chơi thử giải từ.">
+  <meta property="og:image" content="assets/brand/share.jpg">
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&amp;family=Cabin:ital,wght@0,400;0,700;1,400&amp;family=Lobster&amp;family=Quicksand:wght@500;700&amp;family=Saira+Extra+Condensed:wght@700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css?v=17">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script defer src="assets/js/photos.js?v=17"></script>
+  <script defer src="assets/js/layout.js?v=17"></script>
+  <script defer src="assets/js/drum.js?v=17"></script>
+  <script defer src="assets/js/features.js?v=17"></script>
+  <script defer src="assets/js/motion.js?v=17"></script>
+</head>
+<body data-page="tro-choi">
+<main id="main">
+  <section class="page-hero">
+    <div class="drum"></div>
+    <div class="wrap page-hero__center">
+      <img src="assets/brand/tro-choi.png" width="230" alt="Trò chơi">
+      <h1 class="wordmark wordmark--wide"><img width="1250" height="320" src="assets/brand/vua-tieng-viet.png" alt="Vua Tiếng Việt"></h1>
+      <p class="lead">Bốn đội tranh tài. Nhanh mắt với con chữ, nhanh tay và thật ăn ý với đồng đội.</p>
+      <div class="actions"><a class="btn btn--red" href="#doi-thang">Xem đội chiến thắng</a><a class="btn" href="#choi-thu">Chơi thử giải từ</a><a class="btn btn--glass" href="#khoanh-khac-thi">Xem khoảnh khắc</a></div>
+    </div>
+    <div class="waves waves--edge"></div>
+  </section>
+
+  <section class="section winner lacquer" id="doi-thang">
+    <div class="drum"></div>
+    <div class="wrap">
+      <div class="winner__plate">
+        <h2><img width="1100" height="574" class="winner__heading" src="assets/brand/cong-bo.png" alt="Công bố và trao thưởng"></h2>
+        <p class="badge">Đội chiến thắng</p>
+        <p><img class="winner__name" width="1876" height="544" src="assets/brand/doi-ca-sau.png" alt="Cá Sấu Đội Mũ"></p>
+      </div>
+      <div class="winner__photos">
+        <figure>
+          <button class="zoom frame" data-zoom="assets/photos/l/9097.jpg"><img decoding="async" loading="lazy" width="1600" height="1062" src="assets/photos/l/9097.jpg" style="object-position:30% center" alt="Bạn diễn từ của đội Cá Sấu Đội Mũ ở phần thi cuối"></button>
+        </figure>
+        <figure>
+          <button class="zoom frame" data-zoom="assets/photos/l/9104.jpg"><img decoding="async" loading="lazy" width="1600" height="1062" src="assets/photos/l/9104.jpg" style="object-position:34% center" alt="Bạn đoán từ của đội Cá Sấu Đội Mũ ở phần thi cuối"></button>
+        </figure>
+        <figure class="winner__team">
+          <button class="zoom frame" data-zoom="assets/photos/l/9204.jpg"><img decoding="async" loading="lazy" width="1600" height="1093" src="assets/photos/l/9204.jpg" alt="Cả đội Cá Sấu Đội Mũ bên cô"></button>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section round" id="vong-1">
+    <div class="wrap">
+      <h2 class="round__title">Vòng 1: Vua Tiếng Việt</h2>
+      <div class="round__body">
+        <button class="zoom frame round__photo" data-zoom="assets/photos/l/9001.jpg"><img decoding="async" loading="lazy" width="1600" height="1062" src="assets/photos/l/9001.jpg" alt="Các đội cùng sắp xếp chữ cái thành từ có nghĩa"></button>
+        <div class="panel rules rules--one">
+          <div>
+            <h3>Luật chơi</h3>
+            <p>Lớp được chia thành các đội. Mỗi đội nhận một bộ từ khóa bị xáo trộn chữ cái có liên quan đến chủ đề thầy cô, trường lớp và ngày 20/11.</p>
+            <p>Các đội có thời gian 5 phút để giải mã tất cả các từ trong bộ của mình.</p>
+          </div>
+          <div>
+            <h3>Cách tính điểm</h3>
+            <span class="badge">Trường hợp 1</span>
+            <p>Trong 5 phút, đội nào giải nhanh nhất sẽ được xếp hạng theo thời gian: Nhất +30 điểm, Nhì +20 điểm, Ba +10 điểm.</p>
+            <span class="badge round__case">Trường hợp 2</span>
+            <p>Hết 5 phút đội vẫn chưa giải xong thì tính điểm theo số câu giải được, mỗi câu 10 điểm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section round round--gold" id="vong-2">
+    <div class="wrap">
+      <h2 class="round__title">Vòng 2: Tăng tốc</h2>
+      <div class="round__body round__body--flip">
+        <div class="panel rules rules--one">
+          <div>
+            <h3>Luật chơi</h3>
+            <p>Các đội sẽ giành quyền trả lời câu hỏi bằng cách đưa bảng tên nhóm mình lên.</p>
+            <p>Nội dung mỗi câu hỏi không giới hạn phạm vi kiến thức, có thể là âm nhạc, văn học, tiếng Anh...</p>
+          </div>
+          <div>
+            <h3>Cách tính điểm</h3>
+            <p>Mỗi câu trả lời đúng được 10 điểm.</p>
+          </div>
+        </div>
+        <button class="zoom frame round__photo" data-zoom="assets/photos/l/9067.jpg"><img decoding="async" loading="lazy" width="1600" height="1062" src="assets/photos/l/9067.jpg" alt="Các đội giơ bảng tên giành quyền trả lời"></button>
+      </div>
+      <div class="round__grid">
+        <button class="zoom frame round__photo" data-zoom="assets/photos/l/9032.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9032.jpg" alt="Giơ tay hào hứng ở vòng Tăng tốc"></button>
+        <button class="zoom frame round__photo" data-zoom="assets/photos/l/9033.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9033.jpg" alt="Cả đội cùng giành quyền trả lời"></button>
+        <button class="zoom frame round__photo" data-zoom="assets/photos/l/9048.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9048.jpg" alt="Các bạn cầm bảng tên sẵn sàng"></button>
+        <button class="zoom frame round__photo" data-zoom="assets/photos/l/9055.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9055.jpg" alt="Trả lời câu hỏi Tăng tốc"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section round" id="vong-3">
+    <div class="wrap">
+      <h2 class="round__title">Vòng 3: Bạn diễn, tôi đoán</h2>
+      <div class="round__body">
+        <button class="zoom frame round__photo" data-zoom="assets/photos/l/9084.jpg"><img decoding="async" loading="lazy" width="1600" height="1062" src="assets/photos/l/9084.jpg" alt="Người mô tả và người đoán từ"></button>
+        <div class="panel rules rules--one">
+          <div>
+            <h3>Luật chơi</h3>
+            <p>Mỗi đội chọn ngẫu nhiên 1 gói câu hỏi và cử 2 đại diện tham gia: một người mô tả và một người đoán từ trong vòng 5 phút.</p>
+            <p>Người mô tả chỉ được dùng ngôn ngữ hình thể hoặc các từ đơn gợi ý, tuyệt đối không đọc trực tiếp từ khóa hay bất kỳ từ nào có trong đáp án.</p>
+          </div>
+          <div>
+            <h3>Cách tính điểm</h3>
+            <p>Đội nào hoàn thành nhanh nhất trong 5 phút sẽ được cộng thêm: Nhất 30 điểm, Nhì 20 điểm, Ba 10 điểm.</p>
+            <p>Sau 5 phút nếu chưa giải xong, tính điểm theo số câu đúng, mỗi câu 10 điểm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="khoanh-khac-thi">
+    <div class="wrap">
+      <h2 class="title intro" data-split>Khoảnh khắc tranh tài</h2>
+      <div class="round-photos round-photos--six">
+        <button class="zoom frame" data-zoom="assets/photos/l/9001.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9001.jpg" alt="Đội chơi cùng giải từ trên màn hình"></button>
+        <button class="zoom frame" data-zoom="assets/photos/l/8998.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/8998.jpg" alt="Đội chơi cùng tìm đáp án"></button>
+        <button class="zoom frame" data-zoom="assets/photos/l/9032.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9032.jpg" alt="Giơ bảng hào hứng trong lúc tranh tài"></button>
+        <button class="zoom frame" data-zoom="assets/photos/l/9049.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9049.jpg" alt="Các đội hào hứng tranh tài"></button>
+        <button class="zoom frame" data-zoom="assets/photos/l/9104.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9104.jpg" alt="Diễn tả và đoán từ"></button>
+        <button class="zoom frame" data-zoom="assets/photos/l/9097.jpg"><img decoding="async" loading="lazy" width="640" height="425" src="assets/photos/s/9097.jpg" alt="Phần thi cuối cùng"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section lacquer" id="choi-thu">
+    <div class="wrap">
+      <div class="intro">
+        <h2 class="title title--light">Đến lượt bạn giải từ</h2>
+        <p>Chạm vào các chữ theo đúng thứ tự. Đây là bộ từ luyện tập về thầy cô và trường lớp, không phải bộ câu hỏi của buổi thi.</p>
+      </div>
+      <div class="scramble glass glass--dark" data-scramble>
+        <div class="scramble__top"><span data-count></span><span data-points></span></div>
+        <div class="tiles"></div>
+        <div class="slots"></div>
+        <p class="status" aria-live="polite"></p>
+        <div class="actions">
+          <button class="btn" type="button" data-hint>Gợi ý một chữ</button>
+          <button class="btn btn--red" type="button" data-next>Từ tiếp theo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dawn">
+    <div class="wrap">
+      <div class="intro"><h2 class="title">Chơi lại cùng bạn bè</h2><p class="lead">Rủ bạn bè chơi lại và ghi điểm cho bốn đội ngay tại đây.</p></div>
+      <div class="board" data-board></div>
+      <div class="board__foot"><p class="small">Điểm chỉ lưu trên trình duyệt này, không phải kết quả chính thức của chương trình.</p><button class="btn btn--glass" type="button" data-board-reset>Đưa điểm về 0</button></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

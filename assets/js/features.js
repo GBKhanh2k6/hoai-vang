@@ -295,6 +295,7 @@
     const chapterOf = (id) => {
       if (id === '1995' || id === 'team') return 'luu-niem';
       if (id === 'domdom') return 'cay';
+      if (id === '9306' || id === '9307') return 'tri-an';
       const n = Number(id);
       const limits = [[8942, 'don-khach'], [8981, 'khai-mac'], [9112, 'tro-choi'], [9133, 'ket-hoa'], [9167, 'tri-an'], [9188, 'ket-hoa'], [9221, 'cay'], [Infinity, 'luu-niem']];
       return limits.find(([max]) => n <= max)[1];

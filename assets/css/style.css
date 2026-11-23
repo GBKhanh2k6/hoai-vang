@@ -667,3 +667,7 @@ html:has(.lightbox[open]) { overflow: hidden; }
   .hero__note--l .hero__actions { gap: 5px; }
   .hero__note--l .btn { min-height: 38px; padding: 7px 10px; font-size: 13.5px; }
 }
+
+/* Vinh danh doi thang: 2 anh */
+.winner__photos--two { grid-template-columns: 1fr 1.45fr; }
+@media (max-width: 820.98px) { .winner__photos--two { grid-template-columns: minmax(0, 1fr); } }
